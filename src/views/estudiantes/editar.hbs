@@ -4,24 +4,21 @@
     </div>
     <div class="row justify-content-center mt-4">
         <div class="col-md-4">
-            <form method="POST" action="/estudiantes/editar/{{idestudiante}}">
+            <form method="POST" action="/estudiantes/editar/{{estudiante.idestudiante}}">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="nombre" placeholder="Nombre del estudiante" value="{{nombre}}" autofocus>
+                    <input type="text" class="form-control" name="nombre" value="{{estudiante.nombre}}" placeholder="Nombre del estudiante" autofocus />
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="apellido" placeholder="Apellido del estudiante" value="{{apellido}}" />
+                    <input type="text" class="form-control" name="apellido" value="{{estudiante.apellido}}" placeholder="Apellido del estudiante" />
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Correo del estudiante" value="{{email}}" />
+                    <input type="email" class="form-control" name="email" value="{{estudiante.email}}" placeholder="Correo del estudiante" />
                 </div>
                 <div class="form-group">
-                    <select class="form-control" name="idcarrera">
-                        <option value="1" {{#ifCond idcarrera '==' 1}}selected{{/ifCond}}>Carrera 1</option>
-                        <option value="2" {{#ifCond idcarrera '==' 2}}selected{{/ifCond}}>Carrera 2</option>
-                    </select>
+                    <input type="text" class="form-control" name="idcarrera" value="{{estudiante.idcarrera}}" placeholder="ID Carrera" />
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="usuario" placeholder="Usuario del estudiante" value="{{usuario}}" />
+                    <input type="text" class="form-control" name="usuario" value="{{estudiante.usuario}}" placeholder="Usuario del estudiante" />
                 </div>
                 <div class="form-group">
                     <button class="btn btn-success btn-block">Actualizar</button>

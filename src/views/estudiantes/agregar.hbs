@@ -4,9 +4,12 @@
     </div>
     <div class="row justify-content-center mt-4">
         <div class="col-md-4">
-            <form method="POST">
+            <form method="POST" action="/estudiantes/agregar">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="nombre" placeholder="Nombre del estudiante" autofocus>
+                    <input type="text" class="form-control" name="idestudiante" placeholder="ID del estudiante" autofocus />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="nombre" placeholder="Nombre del estudiante" />
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" name="apellido" placeholder="Apellido del estudiante" />
@@ -15,9 +18,7 @@
                     <input type="email" class="form-control" name="email" placeholder="Correo del estudiante" />
                 </div>
                 <div class="form-group">
-                    <select class="form-control">
-                        <option>Seleccione una opcion</option>
-                    </select>
+                    <input type="text" class="form-control" name="idcarrera" placeholder="ID Carrera" />
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" name="usuario" placeholder="Usuario del estudiante" />
@@ -28,3 +29,4 @@
             </form>
         </div>
     </div>
+</div>

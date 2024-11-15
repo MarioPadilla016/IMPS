@@ -1,15 +1,15 @@
 <div class="container p-4">
     <div class="row justify-content-center">
-        <h1>Editar carrera</h1>
+        <h1>Editar materia</h1>
     </div>
     <div class="row justify-content-center mt-4">
         <div class="col-md-4">
-            <form method="POST" action="/carreras/editar/{{carrera.idcarrera}}">
+            <form method="POST" action="/materias/editar/{{materia.idmateria}}">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="idcarrera" value="{{carrera.idcarrera}}" placeholder="ID de la carrera" readonly />
+                    <input type="text" class="form-control" name="idmateria" value="{{materia.idmateria}}" placeholder="ID de la materia" readonly />
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="carrera" value="{{carrera.carrera}}" placeholder="Nombre de la carrera" />
+                    <input type="text" class="form-control" name="materia" value="{{materia.materia}}" placeholder="Nombre de la materia" />
                 </div>
                 <div class="form-group">
                     <button class="btn btn-success btn-block">Actualizar</button>
